@@ -21,6 +21,6 @@ data "vsphere_network" "network" {
 
 # Retrieve template information on vsphere
 data "vsphere_virtual_machine" "template" {
-  name          = "vmCentOS8"
+  name          = var.template_image
   datacenter_id = data.vsphere_datacenter.dc.id
 }
