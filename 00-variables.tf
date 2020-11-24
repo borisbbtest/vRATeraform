@@ -38,11 +38,12 @@ variable "vswitch" {
 variable "dns_servers" {
   default = ["172.16.61.5", "172.16.61.6"]
 }
-
+variable "dns_suffix" {
+  default = ["acad.local"]
+}
 variable "source_pfx" {
   default="712b"
 }
-
 variable "network_params" {
   default = {
     domain        = "acad.local"

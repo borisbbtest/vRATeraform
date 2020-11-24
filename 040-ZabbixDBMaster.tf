@@ -45,6 +45,7 @@ resource "vsphere_virtual_machine" "ZabbixDBMaster" {
 
       }
       dns_server_list = var.dns_servers
+      dns_suffix_list = var.dns_suffix
       ipv4_gateway = var.network_params["gateway"]
     }
   }
