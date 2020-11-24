@@ -124,6 +124,24 @@ variable "zabbixdbs_hostname" {
   default = "zabbixdbs"
 }
 
+#### ZabbixDB_PostgresWitness #####################################
+
+variable "zabbixdbwitness_vm_params" {
+  default = {
+    vcpu = "2"
+    ram  = "4096"
+    disk_size  = "60"
+  }
+}
+variable "zabbixdbwitness_ipaddress" {
+  default = "136"
+}
+
+variable "zabbixdbwitness_hostname" {
+  default = "zabbixdbwitness"
+}
+
+
 #### Zabbix Proxy #####################################
 
 variable "zadbixproxy_vm_params" {
@@ -134,7 +152,7 @@ variable "zadbixproxy_vm_params" {
   }
 }
 variable "zadbixproxy_ipaddress" {
-  default = ["136","137"]
+  default = ["137","138"]
 }
 
 variable "zadbixproxy_hostname" {
@@ -153,7 +171,7 @@ variable "vrlinfs_vm_params" {
   }
 }
 variable "vrlinfs_ipaddress" {
-  default = "138"
+  default = "139"
 }
 
 variable "vrlinfs_hostname" {
