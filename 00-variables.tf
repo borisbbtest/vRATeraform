@@ -2,7 +2,8 @@ provider "vsphere" {
   # If you use a domain set your login like this "MyDomain\\MyUser"
   user           = "administrator@vsphere.local"
   password       = "GHb19ds!vC2z"
-  vsphere_server = "vcsa-02.zonmonitoring.local"
+  //vsphere_server = "vcsa-02.zonmonitoring.local"
+  vsphere_server = "172.16.62.250"
   # if you have a self-signed cert
   allow_unverified_ssl = true
 }
