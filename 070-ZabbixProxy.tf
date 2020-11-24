@@ -35,9 +35,8 @@ resource "vsphere_virtual_machine" "ZabbixProxy" {
       network_interface {
         ipv4_address    = "${var.network_params["based_ip"]}${var.zadbixproxy_ipaddress[count.index]}"
         ipv4_netmask    =  var.network_params["prefix_length"]
-        dns_server_list = var.dns_servers
       }
-
+      dns_server_list = var.dns_servers
       ipv4_gateway = var.network_params["gateway"]
     }
   }
