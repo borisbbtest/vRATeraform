@@ -36,7 +36,7 @@ resource "vsphere_virtual_machine" "ZabbixDBSlave" {
 
     customize {
       linux_options {
-        host_name = "${var.source_pfx}-${var.zabbixdbs_hostname}${count.index}"
+        host_name = "${var.source_pfx}-${var.zabbixdbs_hostname}${count.index+11}"
         domain    = var.network_params["domain"]
       }
 

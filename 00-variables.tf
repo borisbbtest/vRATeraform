@@ -105,7 +105,7 @@ variable "zabbixdbm_ipaddress" {
 }
 
 variable "zabbixdbm_hostname" {
-  default = "zabbixdbm"
+  default = "zabbixdbm10"
 }
 
 #### ZabbixDB_PostgresSlave #####################################
@@ -140,7 +140,7 @@ variable "zabbixdbwitness_ipaddress" {
 }
 
 variable "zabbixdbwitness_hostname" {
-  default = "zabbixdbwitness"
+  default = "zabbixdbwitness20"
 }
 
 
