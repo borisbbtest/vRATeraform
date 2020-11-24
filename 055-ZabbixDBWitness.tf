@@ -27,7 +27,7 @@ resource "vsphere_virtual_machine" "ZabbixDBWitness" {
 
     customize {
       linux_options {
-        host_name = "${var.source_pfx}-${var.zabbixdbwitness_hostname}${count.index}"
+        host_name = "${var.source_pfx}-${var.zabbixdbwitness_hostname}"
         domain    = var.network_params["domain"]
       }
 
